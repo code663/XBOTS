@@ -7,15 +7,15 @@ HELP_STRING = f"★ 𝙓𝘽𝙤𝙩𝙨 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n
 
 HELP_BUTTON = [
     [
-      Button.inline("• ꜱᴘᴀᴍ •", data="spam"),
-      Button.inline("• ʀᴀɪᴅ •", data="raid")
+      Button.inline("ꜱᴘᴀᴍ", data="spam"),
+      Button.inline("ʀᴀɪᴅ", data="raid")
     ],
     [
-      Button.inline("• ᴇxᴛʀᴀ •", data="extra")
+      Button.inline("ᴇxᴛʀᴀ", data="extra")
     ],
     [
-      Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/TheAltron"),
-      Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/AltronChats")
+      Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/roy_editx"),
+      Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/the_friendz")
     ]
   ]
 
