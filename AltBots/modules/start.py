@@ -5,14 +5,14 @@ from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10
 
 START_BUTTON = [
     [
-        Button.inline("• ᴄᴏᴍᴍᴀɴᴅs •", data="help_back")
+        Button.inline("ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", data="help_back")
     ],
     [
-        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/TheAltron"),
-        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/AltronChats")
+        Button.url("ᴜᴘᴅᴀᴛᴇ", "https://t.me/roy-editx"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/the_friendz")
     ],
     [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/ItZxSTaR/XBOTS")
+        Button.url("ʀᴇᴘᴏ", "https://github.com/ItZxSTaR/XBOTS")
     ]
 ]
 
@@ -33,14 +33,12 @@ async def start(event):
         AltBot = await event.client.get_me()
         bot_name = AltBot.first_name
         bot_id = AltBot.id
-        TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝐀xᴇɴ](https://t.me/PyXen)**\n\n"
-        TEXT += f"» **xʙᴏᴛꜱ ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
-        TEXT += f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `3.11.3`\n"
-        TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
+        TEXT = f"**๏ ʜᴇʏ [{event.sender.first_name}](tg://user?id={event.sender.id}), ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ !\n\n━━━━━━━━━━━━━━━━━\n\n๏ ɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id}) ᴀɴᴅ ɪ ʜᴀᴠᴇ sᴘᴀᴍᴘɪɴɢ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs.**"
+        TEXT += f"» **๏ ɪ ᴀᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ sᴘᴀᴍᴘɪɴɢ ʙᴏᴛ.**"
         await event.client.send_file(
                     event.chat_id,
-                    "https://te.legra.ph/file/07d39b85c6cea32f15259.jpg",
+                    "https://telegra.ph/file/56374b21e237aa9da9be7.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
-                )
+        )
+        
