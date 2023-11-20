@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"★ 𝙓𝘽𝙤𝙩𝙨 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n» **๏ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**"
+HELP_STRING = f"★ 𝙉𝙤𝙍𝙞 𝙎𝙥𝙖𝙢 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n๏ **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**"
 
 HELP_BUTTON = [
     [
@@ -14,7 +14,7 @@ HELP_BUTTON = [
       Button.inline("ᴇxᴛʀᴀ", data="extra")
     ],
     [
-      Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/roy_editx"),
+      Button.url("ᴜᴘᴅᴀᴛᴇ", "https://t.me/roy_editx"),
       Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/the_friendz")
     ]
   ]
@@ -126,20 +126,20 @@ async def helpback(event):
             HELP_STRING,
             buttons=[
               [
-                Button.inline("• ꜱᴘᴀᴍ •", data="spam"),
-                Button.inline("• ʀᴀɪᴅ •", data="raid")
+                Button.inline("ꜱᴘᴀᴍ", data="spam"),
+                Button.inline("ʀᴀɪᴅ", data="raid")
               ],
               [
-                Button.inline("• ᴇxᴛʀᴀ •", data="extra")
+                Button.inline("ᴇxᴛʀᴀ", data="extra")
               ],
               [
-                Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/TheAltron"),
-                Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/AltronChats")
+                Button.url("ᴜᴘᴅᴀᴛᴇ", "https://t.me/roy_editx"),
+                Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/the_friendz")
               ]
             ]
           )
     else:
-        await event.answer("Make Your Own Altron Bots !! @PyXen", cache_time=0, alert=True)
+        await event.answer("๏ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ɴᴏʀɪ sᴘᴀᴍ ʙᴏᴛs !", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -155,10 +155,10 @@ async def helpback(event):
 async def help_spam(event):
     if event.query.user_id in SUDO_USERS:    
         await event.edit(spam_msg,
-              buttons=[[Button.inline("< Back", data="help_back"),],],
+              buttons=[[Button.inline("ʙᴀᴄᴋ", data="help_back"),],],
               ) 
     else:
-        await event.answer("Make Your Own Altron Bots !! @PyXen", cache_time=0, alert=True)
+        await event.answer("๏ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ɴᴏʀɪ sᴘᴀᴍ ʙᴏᴛs !", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -174,10 +174,10 @@ async def help_spam(event):
 async def help_raid(event):
     if event.query.user_id in SUDO_USERS:
         await event.edit(raid_msg,
-            buttons=[[Button.inline("< Back", data="help_back"),],],
+            buttons=[[Button.inline("ʙᴀᴄᴋ", data="help_back"),],],
           )
     else:
-        await event.answer("Make Your Own Altron Bots !! @PyXen", cache_time=0, alert=True)
+        await event.answer("๏ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ɴᴏʀɪ sᴘᴀᴍ ʙᴏᴛs !", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -193,7 +193,7 @@ async def help_raid(event):
 async def help_extra(event):
     if event.query.user_id in SUDO_USERS:
         await event.edit(extra_msg,
-            buttons=[[Button.inline("< Back", data="help_back"),],],
+            buttons=[[Button.inline("ʙᴀᴄᴋ", data="help_back"),],],
             )
     else:
-        await event.answer("Make Your Own Altron Bots !! @PyXen", cache_time=0, alert=True)
+        await event.answer("๏ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ɴᴏʀɪ sᴘᴀᴍ ʙᴏᴛs !", cache_time=0, alert=True)
